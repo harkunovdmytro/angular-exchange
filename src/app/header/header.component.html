@@ -1,0 +1,13 @@
+<header class="fixed top-0 left-0 h-20 bg-white drop-shadow-lg w-full">
+  <div class='container mx-auto flex justify-center items-center h-full text-xl'>
+
+    <div class='flex flex-row mx-5 max-w-full ' *ngFor="let currency of headerCurrencies">
+        <div class="flex">
+          <div class="uppercase font-bold mr-2 ">{{currency.ccy}}</div>
+          <div>{{currency.buy}}</div>
+          <span class="text-gray-500">/</span>
+          <div>{{currency.sale}}</div>
+        </div>
+    </div>
+  </div>
+</header>
